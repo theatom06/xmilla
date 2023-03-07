@@ -1,0 +1,26 @@
+{
+    "name": "Xmilla",
+    "short_name": "Xmilla",
+    "start_url": "/",
+    "display": "standalone",
+    "description": "Just a css gimick stopwatch",
+    "lang": "en",
+    "dir": "auto",
+    "theme_color": "#ffffff",
+    "background_color": "#111",
+    "orientation": "any",
+    "icons": [{
+            "src": "/icons/512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/icons/192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "prefer_related_applications": false
+}
