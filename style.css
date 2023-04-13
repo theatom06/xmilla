@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
 
 :root {
-  font: 400 100%/1.5 'Sniglet', cursive;
+  font-family: 'Sniglet', cursive;
+  font-weight: 400;
+  line-height: 1.5;
   color: white;
   background-color: #151515;
   font-synthesis: none;
@@ -22,7 +24,7 @@ body {
   overflow: hidden;
 }
 
-div.center {
+.center {
   z-index: 10;
   position: absolute;
   top: 50%;
@@ -39,23 +41,23 @@ div.center {
 }
 
 @media (min-width: 1024px) {
-  div.center {
+  .center {
     height: 60vh;
   }
 }
 
 h1 {
   font-size: 4em;
-  margin: 0
+  margin: 0;
 }
 
 .subtitle {
   color: #888;
   font-size: 2em;
-  margin: 0
+  margin: 0;
 }
 
-.blink_me {
+.blink {
   animation: blinker 2s linear infinite;
 }
 
@@ -88,10 +90,10 @@ h1 {
 
 @keyframes rotate {
   from {
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
 
   to {
-    rotate: 360deg;
+    transform: rotate(360deg);
   }
 }
