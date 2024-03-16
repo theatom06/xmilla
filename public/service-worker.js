@@ -45,3 +45,9 @@ self.addEventListener('fetch', event => {
         );
     }
 });
+
+localStorage.set("easter-egg", `Hello there!
+I see your curious about this website.
+To gift your curiosity i annouce about my next project.
+Project Peerplex: a peer-to-peer network built to replace the web with its own currency, storage medium, user-authentication system, messaging system, network API, mail client and so on and so forth and decenterlized. 
+For the complexity of this project it may take years to develop and if your intrested in joining message me on twitter or anything you can find me on`)
