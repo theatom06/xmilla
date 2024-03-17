@@ -1,5 +1,5 @@
 # Xmilla
-## An animated stopwatch
+## An simple clock
 
 This is a simple animated landing page created using HTML and CSS. It features a centered div with a rotating blob in the background and a blinking text animation.
 

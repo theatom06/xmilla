@@ -1,26 +1,38 @@
 {
-    "name": "Xmilla",
-    "short_name": "Xmilla",
-    "start_url": "/",
-    "display": "standalone",
-    "description": "Just a css gimick stopwatch",
-    "lang": "en",
-    "dir": "auto",
-    "theme_color": "#ffffff",
-    "background_color": "#111",
-    "orientation": "any",
-    "icons": [{
-            "src": "/icons/512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable"
-        },
-        {
-            "src": "/icons/192.png",
-            "sizes": "192x192",
-            "type": "image/png",
-            "purpose": "any"
-        }
-    ],
-    "prefer_related_applications": false
+  "name": "Xmilla",
+  "short_name": "xmilla",
+  "start_url": "/",
+  "display": "standalone",
+  "description": "A simple clock website",
+  "lang": "en",
+  "dir": "auto",
+  "theme_color": "#fff",
+  "background_color": "#fff",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "public/manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "public/manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "public/manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "public/manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
 }

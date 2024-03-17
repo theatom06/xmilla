@@ -7,7 +7,7 @@ const heading = document.querySelector("h1");
 setInterval(() => {
   const time = new Date()
 
-  heading.innerText = time.getHours().toString().padStart(2, "0") + ":" +  time.getMinutes().toString().padStart(2, "0") + ":" + time.getSeconds().toString().padStart(2, "0")
+  heading.innerText = (time.getHours() % 12).toString().padStart(2, "0") + ":" +  time.getMinutes().toString().padStart(2, "0") + ":" + time.getSeconds().toString().padStart(2, "0")
 }, 1000);
 
 (() => {
@@ -15,15 +15,16 @@ setInterval(() => {
      // Blue shades
     "#1849ff", "#006fff", "#008cff", "#00a5ff", "#36bbff",
     "#7b18ff", "#7fffd4", "#00e6f1","#00c7ff", "#27a0ff",
-    "#40e0d0", "#0041ff",
+    "#40e0d0", "#0041ff", "#00e6f1","#00c7ff",
 
     // Red shades
     "#fd008f", "#ff005e", "#ff3636", "#ff00f7", "#ff00ff",
-    "#ff0080", "#ff6347",
+    "#ff0080", "#ff6347", "#fd008f", "#ff005e", "#ff3636",
+    "#ff00f7", "#ff00ff", "#ff0080", "#ff6347",
 
     //Yellow shades
-    "#ffff00",
-    "#F8FF00",
+    "#ffff00", "#F8FF00", "#ffff00", "#F8FF00", "#ffff00",
+    "#F8FF00", "#ffff00", "#F8FF00", "#ffff00", "#F8FF00",
 
     // Green shades
     "#00ff00",
@@ -33,7 +34,7 @@ setInterval(() => {
 
   const getRandomNumber = max => Math.floor(Math.random() * max);
 
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 40; i++) {
     const blob = document.createElement("div");
     blob.id = "blob";
     blob.style.backgroundColor = gradients[getRandomNumber(gradients.length)];
